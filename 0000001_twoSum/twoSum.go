@@ -1,15 +1,18 @@
-package _000001_twoSum
+package twosum
 
+// TwoSum returns indices of two numbers that they add up to target.
+// Uses a map to store visited numbers and find complements in O(1),
+// resulting in an overall O(n) time complexity.
 func TwoSum(nums []int, target int) []int {
-	potential := make(map[int]int)
+	visited := make(map[int]int)
 
 	for i, n := range nums {
-		if val, exist := potential[target-n]; exist {
-			return []int{val, i}
+		if idx, exist := visited[target-n]; exist {
+			return []int{idx, i}
 		}
 
-		potential[n] = i
+		visited[n] = i
 	}
 
-	return []int{1, -1}
+	return []int{}
 }
