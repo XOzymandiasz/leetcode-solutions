@@ -46,6 +46,7 @@ This reduces the overall complexity to linear time.
 |-------------|--------------|-------------------|
 | Rust        | ~0 ms (100%) | ~2.3  MB (83.34%) |
 | Go          | ~0 ms (100%) | ~5.8  MB (71.28%) |
+| Python      | ~0 ms (100%) | ~20.4 MB (64.31%) | 
 | PHP         | ~0 ms (100%) | ~20.6 MB (79.88%) | 
 | TypesScript | ~0 ms (100%) | ~56.8 MB (59.13%) | 
 ---
@@ -81,6 +82,18 @@ func TwoSum(nums []int, target int) []int {
 
 	return []int{}
 }
+```
+## 🐍 Python
+```python
+def twoSum(self, nums: List[int], target: int) -> List[int]:
+    visited = {}
+    
+    for i, num in enumerate(nums):
+        if target - num in visited:
+            return [visited[target - num], i]
+        visited[num] = i
+
+    return []
 ```
 ## 🟪🐘 PHP
 ```php
