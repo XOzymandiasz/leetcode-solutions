@@ -42,15 +42,15 @@ This reduces the overall complexity to linear time.
 ---
 ## ⚡ Performance
 
-| Language | Runtime      | Memory           |
-|----------|--------------|------------------|
-| Go       | ~0 ms (100%) | ~5.8 MB (71.28%) |
-| Rust     | ~0 ms (100%) | ~2.3 MB (83.34%) |
-
+| Language | Runtime      | Memory            |
+|----------|--------------|-------------------|
+| Go       | ~0 ms (100%) | ~5.8  MB (71.28%) |
+| Rust     | ~0 ms (100%) | ~2.3  MB (83.34%) |
+| PHP      | ~0 ms (100%) | ~20.6 MB (79.88%) | 
 ---
 ## 💻 Implementations
 
-### 🐹 Go
+## 🐹 Go
 ```go
 func TwoSum(nums []int, target int) []int {
 	visited := make(map[int]int, len(nums))
@@ -66,7 +66,7 @@ func TwoSum(nums []int, target int) []int {
 	return []int{}
 }
 ```
-### 🦀Rust
+## 🦀Rust
 ``` rust
 pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
     use std::collections::HashMap;
@@ -79,5 +79,22 @@ pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
         visited.insert(n, i as i32);
     }
     vec!{}
+}
+```
+## 🟪🐘 PHP
+```php
+/**
+ * @param Integer[] $nums
+ * @return Integer[]
+ */
+function twoSum(array $nums, int $target): array {
+    $visited = [];
+    foreach ($nums as $i => $num) {
+        if (isset($visited[$target - $num])) {
+            return [$visited[$target - $num], $i];
+        }
+        $visited[$num] = $i;     
+    }
+    return [];
 }
 ```
