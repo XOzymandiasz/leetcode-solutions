@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { twoSum } from './Solution';
+import { twoSum } from './solution';
 
 describe('twoSum', () => {
     const cases = [
