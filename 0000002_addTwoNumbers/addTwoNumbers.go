@@ -1,5 +1,6 @@
 package _000002_addTwoNumbers
 
+// ListNode is structure given in problem
 type ListNode struct {
 	Val  int
 	Next *ListNode
