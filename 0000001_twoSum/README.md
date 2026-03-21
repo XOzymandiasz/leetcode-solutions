@@ -46,6 +46,7 @@ This reduces the overall complexity to linear time.
 |-------------|--------------|-------------------|
 | Rust        | ~0 ms (100%) | ~2.3  MB (83.34%) |
 | Go          | ~0 ms (100%) | ~5.8  MB (71.28%) |
+| C++         | ~0 ms (100%) | ~14.7 MB (52.32%) |
 | Python      | ~0 ms (100%) | ~20.4 MB (64.31%) | 
 | PHP         | ~0 ms (100%) | ~20.6 MB (79.88%) | 
 | JavaScript  | ~0 ms (100%) | ~56.4 MB (56.45%) | 
@@ -84,6 +85,26 @@ func TwoSum(nums []int, target int) []int {
 	return []int{}
 }
 ```
+
+## ⚙️C++
+```cpp
+std::vector<int> twoSum(std::vector<int>& nums, int target) {
+    std::unordered_map<int, int> m;
+
+    for (size_t i = 0; i < nums.size(); ++i) {
+        int complement = target - nums[i];
+
+        if (m.find(complement) != m.end()) {
+            return {m[complement], static_cast<int>(i)};
+        }
+
+        m[nums[i]] = i;
+    }
+
+    return {};
+}
+```
+
 ## 🐍 Python
 ```python
 def twoSum(self, nums: List[int], target: int) -> List[int]:
