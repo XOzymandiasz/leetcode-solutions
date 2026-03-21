@@ -42,14 +42,30 @@ This reduces the overall complexity to linear time.
 ---
 ## ⚡ Performance
 
-| Language | Runtime      | Memory            |
-|----------|--------------|-------------------|
-| Go       | ~0 ms (100%) | ~5.8  MB (71.28%) |
-| Rust     | ~0 ms (100%) | ~2.3  MB (83.34%) |
-| PHP      | ~0 ms (100%) | ~20.6 MB (79.88%) | 
+| Language    | Runtime      | Memory            |
+|-------------|--------------|-------------------|
+| Rust        | ~0 ms (100%) | ~2.3  MB (83.34%) |
+| Go          | ~0 ms (100%) | ~5.8  MB (71.28%) |
+| PHP         | ~0 ms (100%) | ~20.6 MB (79.88%) | 
+| TypesScript | ~0 ms (100%) | ~56.8 MB (59.13%) | 
 ---
 ## 💻 Implementations
 
+## 🦀Rust
+``` rust
+pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
+    use std::collections::HashMap;
+    let mut visited: HashMap<i32, i32> = HashMap::with_capacity(nums.len());
+
+    for (i, &n) in nums.iter().enumerate() {
+        if let Some(&idx) = visited.get(&(target - n)) {
+            return vec![idx, i as i32];
+        }
+        visited.insert(n, i as i32);
+    }
+    vec!{}
+}
+```
 ## 🐹 Go
 ```go
 func TwoSum(nums []int, target int) []int {
@@ -64,21 +80,6 @@ func TwoSum(nums []int, target int) []int {
 	}
 
 	return []int{}
-}
-```
-## 🦀Rust
-``` rust
-pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
-    use std::collections::HashMap;
-    let mut visited: HashMap<i32, i32> = HashMap::with_capacity(nums.len());
-
-    for (i, &n) in nums.iter().enumerate() {
-        if let Some(&idx) = visited.get(&(target - n)) {
-            return vec![idx, i as i32];
-        }
-        visited.insert(n, i as i32);
-    }
-    vec!{}
 }
 ```
 ## 🟪🐘 PHP
@@ -96,5 +97,21 @@ function twoSum(array $nums, int $target): array {
         $visited[$num] = $i;     
     }
     return [];
+}
+```
+## 🔷 Typescript
+```typescript
+function twoSum(nums: number[], target: number): number[] {
+    const visited: Record<number, number> = {};
+    
+    for (let i = 0; i < nums.length; i++) {
+        const complement = target - nums[i];
+        if (complement in visited) {
+            return [visited[complement], i];
+        }
+        visited[nums[i]] = i;
+    }
+    
+    return []
 }
 ```
