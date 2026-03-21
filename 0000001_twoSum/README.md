@@ -35,19 +35,25 @@ This reduces the overall complexity to linear time.
 ---
 
 ## ⏱ Complexity
+
 - **Time:** `O(n)` - single pass through the array
 - **Space:** `O(n)` - additional memory for the hash map
 
 ---
+## ⚡ Performance
 
+| Language | Runtime      | Memory           |
+|----------|--------------|------------------|
+| Go       | ~0 ms (100%) | ~5.8 MB (71.28%) |
+| Rust     | ~0 ms (100%) | ~2.3 MB (83.34%) |
+
+---
 ## 💻 Implementations
 
-### 🟦 Go
+### 🐹 Go
 ```go
-package twosum
-
 func TwoSum(nums []int, target int) []int {
-	visited := make(map[int]int)
+	visited := make(map[int]int, len(nums))
 
 	for i, n := range nums {
 		if idx, exist := visited[target-n]; exist {
@@ -58,5 +64,20 @@ func TwoSum(nums []int, target int) []int {
 	}
 
 	return []int{}
+}
+```
+### 🦀Rust
+``` rust
+pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
+    use std::collections::HashMap;
+    let mut visited: HashMap<i32, i32> = HashMap::with_capacity(nums.len());
+
+    for (i, &n) in nums.iter().enumerate() {
+        if let Some(&idx) = visited.get(&(target - n)) {
+            return vec![idx, i as i32];
+        }
+        visited.insert(n, i as i32);
+    }
+    vec!{}
 }
 ```
