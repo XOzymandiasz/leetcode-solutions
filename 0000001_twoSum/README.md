@@ -48,6 +48,7 @@ This reduces the overall complexity to linear time.
 | Go          | ~0 ms (100%) | ~5.8  MB (71.28%) |
 | Python      | ~0 ms (100%) | ~20.4 MB (64.31%) | 
 | PHP         | ~0 ms (100%) | ~20.6 MB (79.88%) | 
+| JavaScript  | ~0 ms (100%) | ~56.4 MB (56.45%) | 
 | TypesScript | ~0 ms (100%) | ~56.8 MB (59.13%) | 
 ---
 ## 💻 Implementations
@@ -111,6 +112,24 @@ function twoSum(array $nums, int $target): array {
     }
     return [];
 }
+```
+## 🟨 Javascript
+```javascript
+var twoSum = function(nums, target) {
+    const visited = new Map();
+
+    for (let i = 0; i < nums.length; i++) {
+        const complement = target - nums[i];
+
+        if (visited.has(complement)) {
+            return [visited.get(complement), i];
+        }
+
+        visited.set(nums[i], i);
+    }
+
+    return [];
+};
 ```
 ## 🔷 Typescript
 ```typescript
