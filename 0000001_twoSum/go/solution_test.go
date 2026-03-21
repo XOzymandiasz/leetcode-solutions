@@ -22,18 +22,11 @@ func TestTwoSum(t *testing.T) {
 		t.Run(tc.name, func(t *testing.T) {
 			result := twosum.TwoSum(tc.nums, tc.target)
 
-			if len(result) != 2 {
-				t.Fatalf("expected 2 indices, got %v", result)
-			}
-
-			i, j := result[0], result[1]
+			i := result[0]
+			j := result[1]
 
 			if i == j {
 				t.Fatalf("indices must be different: %v", result)
-			}
-
-			if i < 0 || i >= len(tc.nums) || j < 0 || j >= len(tc.nums) {
-				t.Fatalf("indices out of range: %v", result)
 			}
 
 			sum := tc.nums[i] + tc.nums[j]
@@ -47,5 +40,13 @@ func TestTwoSum(t *testing.T) {
 				)
 			}
 		})
+	}
+}
+
+func TestTwoSum_NoSolution(t *testing.T) {
+	result := twosum.TwoSum([]int{3}, 100)
+
+	if len(result) != 0 {
+		t.Errorf("expected empty result, got %v", result)
 	}
 }
