@@ -4,7 +4,7 @@ package twosum
 // Uses a map to store visited numbers and find complements in O(1),
 // resulting in an overall O(n) time complexity.
 func TwoSum(nums []int, target int) []int {
-	visited := make(map[int]int)
+	visited := make(map[int]int, len(nums))
 
 	for i, n := range nums {
 		if idx, exist := visited[target-n]; exist {
