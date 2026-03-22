@@ -7,7 +7,7 @@
 ---
 
 ## 🧩 Problem
-Given an array of integers `nums` and an integer `target`, returns indices of two numbers whose sum equals the `target`.
+There is an integer array `nums` and an integer `target`, returns indices of two numbers whose sum equals the `target`.
 
 Constraints:
 - Each input has exactly one solution.
