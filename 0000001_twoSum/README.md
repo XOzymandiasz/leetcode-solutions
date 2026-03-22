@@ -73,15 +73,15 @@ pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
 ## 🐹 Go
 ```go
 func TwoSum(nums []int, target int) []int {
-	visited := make(map[int]int, len(nums))
+    visited := make(map[int]int, len(nums))
 
-	for i, n := range nums {
-		if idx, exist := visited[target-n]; exist {
-			return []int{idx, i}
-		}
-
-		visited[n] = i
-	}
+    for i, n := range nums {
+    	if idx, exist := visited[target-n]; exist {
+    		return []int{idx, i}
+    	}   
+    	
+    	visited[n] = i
+    }
 
 	return []int{}
 }
