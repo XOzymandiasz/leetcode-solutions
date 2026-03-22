@@ -22,8 +22,8 @@ The solution uses a **map** to track previously visited numbers and their indice
 
 - For each element `n`, compute its complement: `target - n`
 - Check if the complement has already been seen
-- If yes — return both indices immediately
-- Otherwise — store the current number in the map
+- If yes - return both indices immediately
+- Otherwise - store the current number in the map
 
 ### Why it works
 
@@ -46,9 +46,11 @@ This reduces the overall complexity to linear time.
 |-------------|----------------|-------------------|
 | Rust        | ~0 ms (100%)   | ~2.3  MB (83.34%) |
 | Go          | ~0 ms (100%)   | ~5.8  MB (71.28%) |
+| C           | ~0 ms (100%)   | ~10.8 MB (5.11%)  |
 | C++         | ~0 ms (100%)   | ~14.7 MB (52.32%) |
 | Python      | ~0 ms (100%)   | ~20.4 MB (64.31%) | 
 | PHP         | ~0 ms (100%)   | ~20.6 MB (79.88%) | 
+| C#          | ~0 ms (100%)   | ~49.4 MB (34.03%) | 
 | JavaScript  | ~0 ms (100%)   | ~56.4 MB (56.45%) | 
 | TypesScript | ~0 ms (100%)   | ~56.8 MB (59.13%) | 
 | Java        | ~2 ms (99.23%) | ~47.1 MB (68.47%) | 
@@ -171,6 +173,29 @@ function twoSum(array $nums, int $target): array {
     return [];
 }
 ```
+
+## C#
+```csharp
+public int[] TwoSum(int[] nums, int target)
+{     
+    Dictionary<int, int> map = new Dictionary<int, int>(nums.Length);
+
+    map[nums[0]] = 0;
+    for (int i = 1; i < nums.Length; i++)
+    {
+        int complement = target - nums[i];
+
+        if (map.TryGetValue(complement, out int previous))
+        {
+            return new int[2] { previous, i };
+        }
+            
+        map[nums[i]] = i;
+    }
+    return new int[0];
+}
+```
+
 ## 🟨 Javascript
 ```javascript
 var twoSum = function(nums, target) {
