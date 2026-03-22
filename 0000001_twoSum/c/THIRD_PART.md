@@ -1,2 +1,2 @@
-This project uses uthash (https://troydhanson.github.io/uthash/)
-Licensed under BSD-2-Clause License.
+This project depends on uthash (https://troydhanson.github.io/uthash/).
+Please download uthash.h and place it in the include path before building.
