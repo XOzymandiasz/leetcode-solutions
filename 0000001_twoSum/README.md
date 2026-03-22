@@ -42,15 +42,16 @@ This reduces the overall complexity to linear time.
 ---
 ## ⚡ Performance
 
-| Language    | Runtime      | Memory            |
-|-------------|--------------|-------------------|
-| Rust        | ~0 ms (100%) | ~2.3  MB (83.34%) |
-| Go          | ~0 ms (100%) | ~5.8  MB (71.28%) |
-| C++         | ~0 ms (100%) | ~14.7 MB (52.32%) |
-| Python      | ~0 ms (100%) | ~20.4 MB (64.31%) | 
-| PHP         | ~0 ms (100%) | ~20.6 MB (79.88%) | 
-| JavaScript  | ~0 ms (100%) | ~56.4 MB (56.45%) | 
-| TypesScript | ~0 ms (100%) | ~56.8 MB (59.13%) | 
+| Language    | Runtime        | Memory            |
+|-------------|----------------|-------------------|
+| Rust        | ~0 ms (100%)   | ~2.3  MB (83.34%) |
+| Go          | ~0 ms (100%)   | ~5.8  MB (71.28%) |
+| C++         | ~0 ms (100%)   | ~14.7 MB (52.32%) |
+| Python      | ~0 ms (100%)   | ~20.4 MB (64.31%) | 
+| PHP         | ~0 ms (100%)   | ~20.6 MB (79.88%) | 
+| JavaScript  | ~0 ms (100%)   | ~56.4 MB (56.45%) | 
+| TypesScript | ~0 ms (100%)   | ~56.8 MB (59.13%) | 
+| Java        | ~2 ms (99.23%) | ~47.1 MB (68.47%) | 
 ---
 ## 💻 Implementations
 
@@ -202,5 +203,24 @@ function twoSum(nums: number[], target: number): number[] {
     }
     
     return []
+}
+```
+
+## ☕ Java
+```java
+public int[] twoSum(int[] nums, int target) {
+    Map<Integer, Integer> map = new HashMap<>();
+
+    for (int i = 0; i < nums.length; i++) {
+        Integer complement = target - nums[i];
+        Integer previous = map.get(complement);
+
+        if (previous != null) {
+            return new int[]{previous, i};
+        }
+
+        map.put(nums[i], i);
+    }
+    return new int[0];
 }
 ```
