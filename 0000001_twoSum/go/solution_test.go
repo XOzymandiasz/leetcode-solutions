@@ -3,7 +3,7 @@ package twosum_test
 import (
 	"testing"
 
-	twosum "github.com/XOzymandiasz/leetcode-solutions/0000001_twoSum"
+	twosum "github.com/XOzymandiasz/leetcode-solutions/0000001_twoSum/go"
 )
 
 func TestTwoSum(t *testing.T) {
