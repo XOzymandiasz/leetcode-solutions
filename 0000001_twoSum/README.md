@@ -41,6 +41,8 @@ This reduces the overall complexity to linear time.
 
 ---
 ## ⚡ Performance
+> Results are based on LeetCode submissions for the same algorithmic approach.  
+> Values are approximate and depend on the platform's runtime environment, so they should not be treated as rigorous benchmarks.
 
 | Language    | Runtime        | Memory            |
 |-------------|----------------|-------------------|
@@ -57,7 +59,7 @@ This reduces the overall complexity to linear time.
 ---
 ## 💻 Implementations
 
-## 🦀Rust
+### 🦀Rust
 ``` rust
 pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
     use std::collections::HashMap;
@@ -72,7 +74,7 @@ pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
     vec!{}
 }
 ```
-## 🐹 Go
+### 🐹 Go
 ```go
 func TwoSum(nums []int, target int) []int {
     visited := make(map[int]int, len(nums))
@@ -88,7 +90,7 @@ func TwoSum(nums []int, target int) []int {
 	return []int{}
 }
 ```
-## 🔧C
+### 🔧C
 ```c
 typedef struct  {
     int key;
@@ -125,7 +127,7 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
 }
 ```
 
-## ⚙️C++
+### ⚙️C++
 ```cpp
 std::vector<int> twoSum(std::vector<int>& nums, int target) {
     std::unordered_map<int, int> m;
@@ -144,7 +146,7 @@ std::vector<int> twoSum(std::vector<int>& nums, int target) {
 }
 ```
 
-## 🐍 Python
+### 🐍 Python
 ```python
 def twoSum(self, nums: List[int], target: int) -> List[int]:
     visited = {}
@@ -156,7 +158,7 @@ def twoSum(self, nums: List[int], target: int) -> List[int]:
 
     return []
 ```
-## 🟪🐘 PHP
+### 🟪🐘 PHP
 ```php
 /**
  * @param Integer[] $nums
@@ -174,7 +176,7 @@ function twoSum(array $nums, int $target): array {
 }
 ```
 
-## C#
+### C#
 ```csharp
 public int[] TwoSum(int[] nums, int target)
 {     
@@ -196,7 +198,7 @@ public int[] TwoSum(int[] nums, int target)
 }
 ```
 
-## 🟨 Javascript
+### 🟨 Javascript
 ```javascript
 var twoSum = function(nums, target) {
     const visited = new Map();
@@ -214,7 +216,7 @@ var twoSum = function(nums, target) {
     return [];
 };
 ```
-## 🔷 Typescript
+### 🔷 Typescript
 ```typescript
 function twoSum(nums: number[], target: number): number[] {
     const visited: Record<number, number> = {};
@@ -231,7 +233,7 @@ function twoSum(nums: number[], target: number): number[] {
 }
 ```
 
-## ☕ Java
+### ☕ Java
 ```java
 public int[] twoSum(int[] nums, int target) {
     Map<Integer, Integer> map = new HashMap<>();
