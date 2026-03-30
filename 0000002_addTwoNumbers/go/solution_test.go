@@ -4,26 +4,26 @@ import (
 	"reflect"
 	"testing"
 
-	addtwonumbers "github.com/XOzymandiasz/leetcode-solutions/0000002_addTwoNumbers/go"
+	solution "github.com/XOzymandiasz/leetcode-solutions/0000002_addTwoNumbers/go"
 )
 
-func buildList(nums []int) *addtwonumbers.ListNode {
+func buildList(nums []int) *solution.ListNode {
 	if len(nums) == 0 {
 		return nil
 	}
 
-	head := &addtwonumbers.ListNode{Val: nums[0], Next: nil}
+	head := &solution.ListNode{Val: nums[0], Next: nil}
 	current := head
 
 	for _, num := range nums[1:] {
-		current.Next = &addtwonumbers.ListNode{Val: num, Next: nil}
+		current.Next = &solution.ListNode{Val: num, Next: nil}
 		current = current.Next
 	}
 
 	return head
 }
 
-func toSlice(node *addtwonumbers.ListNode) []int {
+func toSlice(node *solution.ListNode) []int {
 	var result []int
 	for node != nil {
 		result = append(result, node.Val)
@@ -49,13 +49,11 @@ func TestAddTwoNumbers(t *testing.T) {
 
 	for _, tc := range tests {
 		t.Run(tc.name, func(t *testing.T) {
-			got := toSlice(addtwonumbers.AddTwoNumbers(buildList(tc.l1), buildList(tc.l2)))
+			got := toSlice(solution.AddTwoNumbers(buildList(tc.l1), buildList(tc.l2)))
 
 			if !reflect.DeepEqual(got, tc.want) {
 				t.Errorf("given l1 = %v, l2 = %v got %v, want %v", tc.l1, tc.l2, got, tc.want)
 			}
 		})
 	}
-
-	_ = addtwonumbers.AddTwoNumbers(nil, nil)
 }
