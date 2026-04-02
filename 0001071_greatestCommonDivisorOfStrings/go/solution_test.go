@@ -17,7 +17,7 @@ func TestGcdOfStrings(t *testing.T) {
 		{name: "odd number of letters", str1: "ABABAB", str2: "ABAB", want: "AB"},
 		{name: "same strings", str1: "ZUBR", str2: "ZUBR", want: "ZUBR"},
 		{name: "one letter not odd", str1: "AAAAA", str2: "AA", want: "A"},
-		{name: "no divisor", str1: "LEET", str2: "CODE", want: ""},
+		{name: "no divisor", str1: "ZUBR", str2: "RBUZ", want: ""},
 	}
 
 	for _, tt := range tests {
