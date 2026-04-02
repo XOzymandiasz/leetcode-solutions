@@ -1,11 +1,11 @@
-package _001431_kidsWithTheGreatestNumberOfCandies
+package solution
 
 func KidsWithCandies(candies []int, extraCandies int) []bool {
 	n := len(candies)
 	var answer []bool
-	maximum := maxValue(candies) - extraCandies
+	maxCandies := maxValue(candies) - extraCandies
 	for i := 0; i < n; i++ {
-		answer = append(answer, candies[i] >= maximum)
+		answer = append(answer, candies[i] >= maxCandies)
 	}
 	return answer
 }
