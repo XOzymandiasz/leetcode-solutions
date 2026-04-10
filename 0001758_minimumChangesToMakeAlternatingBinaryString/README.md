@@ -1,4 +1,4 @@
-# 9. Palindrome Number
+# 1758. Minimum Changes to Make Alternating Binary String
 
 🟢 Difficulty: Easy
 
