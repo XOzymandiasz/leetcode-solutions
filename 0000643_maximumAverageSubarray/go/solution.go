@@ -1,4 +1,4 @@
-package maxAverageSubArray
+package solution
 
 func FindMaxAverage(nums []int, k int) float64 {
 	maxSum := 0
