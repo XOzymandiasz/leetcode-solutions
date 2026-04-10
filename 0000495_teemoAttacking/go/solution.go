@@ -1,6 +1,6 @@
-package teemoAttacking
+package solution
 
-func findPoisonedDuration(timeSeries []int, duration int) int {
+func FindPoisonedDuration(timeSeries []int, duration int) int {
 	totalDuration := 0
 	n := len(timeSeries)
 
