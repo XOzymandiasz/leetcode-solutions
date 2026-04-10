@@ -1,4 +1,4 @@
-package _001758_minimumChangesToMakeAlternatingBinaryString
+package solution
 
 const ZERO = '0'
 const ONE = '1'
