@@ -1,6 +1,6 @@
-package _001009_complementOfBase10Integer
+package solution
 
-func bitwiseComplement(n int) int {
+func BitwiseComplement(n int) int {
 	if n == 0 {
 		return 1
 	}
