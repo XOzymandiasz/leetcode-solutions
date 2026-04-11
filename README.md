@@ -1,6 +1,15 @@
 # leetcode-solutions
 
-| # | Title           | Difficulty | List   | Solution                        | Time | Space | Tags  |
-|---|-----------------|------------|--------|---------------------------------|------|-------|-------|
-| 1 | Two Sum         | 🟢         | Top 75 | [Code](./0000001_twoSum)        | O(n) | O(n)  | array |
-| 2 | Add Two Numbers | 🟡         | Top 75 | [Code](./0000002_addTwoNumbers) | O(n) | O(1)  | list  |
+| #    | Title                                                                | Difficulty | Time      | Space | Tags                   | Plan                                                         |
+|------|----------------------------------------------------------------------|------------|-----------|-------|------------------------|--------------------------------------------------------------|
+| 1    | [Two Sum](./0000001_twoSum)                                          | 🟢         | O(n)      | O(n)  | array, hash table      |                                                              |
+| 2    | [Add Two Numbers](./0000002_addTwoNumbers)                           | 🟡         | O(n)      | O(1)  | linked list, recursion |                                                              |
+| 9    | [Palindrome Number](./0000009_palindromeNumber)                      | 🟢         | O(log(x)) | O(1)  | math, palindrome       |                                                              |
+| 13   | [Roman To Integer](./0000013_romanToInteger)                         | 🟢         | O(n)      | O(1)  | string, math           |                                                              |
+| 283  | [Move Zeros](./0000283_moveZeroes)                                   | 🟢         | O(n)      | O(1)  | array, two pointers    |                                                              |
+| 345  | [Reverse Vowels Of A String](./0000345_reverseVowelsOfAString)       | 🟢         | O(n)      | O(n)  | string, two pointers   | ![Leetcode75](https://img.shields.io/badge/Leetcode-75-blue) |
+| 495  | [Teemo Attacking](./0000495_teemoAttacking)                          | 🟢         | O(n)      | O(1)  | array, simulation      |                                                              |
+| 605  | [Can Place Flowers](./0000605_canPlaceFlowers)                       | 🟢         | O(n)      | O(1)  | array                  |                                                              |
+| 643  | [Maximum Average Subarray](./0000643_maximumAverageSubarray)         | 🟢         | O(n)      | O(1)  | array, sliding windows | ![Leetcode75](https://img.shields.io/badge/Leetcode-75-blue) |
+| 724  | [Find Pivot Index](./0000724_findPivotIndex)                         | 🟢         | O(n)      | O(1)  | array, prefix sum      | ![Leetcode75](https://img.shields.io/badge/Leetcode-75-blue) |
+| 1009 | [Complement Of Base 10 Integer](./0001009_complementOfBase10Integer) | 🟢         | O(log(n)) | O(1)  | array, prefix sum      |                                                              |
