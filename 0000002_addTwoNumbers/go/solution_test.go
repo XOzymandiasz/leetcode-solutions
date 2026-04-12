@@ -52,7 +52,7 @@ func TestAddTwoNumbers(t *testing.T) {
 			got := toSlice(solution.AddTwoNumbers(buildList(tc.l1), buildList(tc.l2)))
 
 			if !reflect.DeepEqual(got, tc.want) {
-				t.Errorf("given l1 = %v, l2 = %v got %v, want %v", tc.l1, tc.l2, got, tc.want)
+				t.Fatalf("AddTwoNumber(%v, %v) = %v, want %v", tc.l1, tc.l2, got, tc.want)
 			}
 		})
 	}
