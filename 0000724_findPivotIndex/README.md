@@ -1,4 +1,5 @@
 # 724. Find Pivot Index
+[All Solutions](../)  
 
 🟢 Difficulty: Easy
 

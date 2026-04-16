@@ -1,4 +1,5 @@
 # 1. Two Sum
+[All Solutions](../)  
 
 🟢 Difficulty: Easy
 

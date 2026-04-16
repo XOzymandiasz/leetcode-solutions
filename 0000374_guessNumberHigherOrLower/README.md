@@ -1,4 +1,5 @@
 # 374. Guess Number Higher Or Lower
+[All Solutions](../)  
 
 🟢 Difficulty: Easy
 

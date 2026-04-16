@@ -1,5 +1,7 @@
 # 2. Add Two Numbers
 
+[All Solutions](../)  
+
 🟠 Difficulty: Medium
 
 🔗 https://leetcode.com/problems/add-two-numbers/

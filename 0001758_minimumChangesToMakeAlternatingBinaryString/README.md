@@ -1,4 +1,5 @@
 # 1758. Minimum Changes to Make Alternating Binary String
+[All Solutions](../)  
 
 🟢 Difficulty: Easy
 

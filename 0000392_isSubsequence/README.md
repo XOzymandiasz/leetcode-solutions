@@ -1,4 +1,5 @@
 # 392. Is Subsequence
+[All Solutions](../)  
 
 🟢 Difficulty: Easy
 

@@ -1,4 +1,5 @@
 # 1456. Maximum Number of Vowels in a Substring of Given Length
+[All Solutions](../)  
 
 🟡 Difficulty: Medium
 

@@ -1,4 +1,5 @@
 # 1732. Find The Highest Altitude
+[All Solutions](../)  
 
 🟢 Difficulty: Easy
 

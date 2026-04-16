@@ -1,4 +1,5 @@
 # 605. Can Place Flowers
+[All Solutions](../)  
 
 🟢 Difficulty: Easy
 

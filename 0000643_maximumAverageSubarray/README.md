@@ -1,4 +1,5 @@
 # 643. Maximum Average Subarray I
+[All Solutions](../)  
 
 🟢 Difficulty: Easy
 

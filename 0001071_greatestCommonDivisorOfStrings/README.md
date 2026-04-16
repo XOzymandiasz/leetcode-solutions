@@ -1,4 +1,5 @@
 # 1071. Greatest Common Divisor Of Strings
+[All Solutions](../)  
 
 🟢 Difficulty: Easy
 

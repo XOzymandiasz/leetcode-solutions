@@ -1,4 +1,5 @@
 # 1679. Max Number Of K-Sum Pairs
+[All Solutions](../)  
 
 🟡 Difficulty: Medium
 

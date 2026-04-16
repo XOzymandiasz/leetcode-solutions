@@ -1,4 +1,5 @@
 # 495. Teemo Attacking
+[All Solutions](../)  
 
 🟢 Difficulty: Easy
 

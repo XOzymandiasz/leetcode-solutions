@@ -1,4 +1,5 @@
 # 700. Search In a Binary Search Tree
+[All Solutions](../)  
 
 🟢 Difficulty: Easy
 

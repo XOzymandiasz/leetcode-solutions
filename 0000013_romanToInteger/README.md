@@ -1,4 +1,5 @@
 # 13. Roman to Integer
+[All Solutions](../)  
 
 🟢 Difficulty: Easy
 

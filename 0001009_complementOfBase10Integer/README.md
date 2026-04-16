@@ -1,4 +1,5 @@
 # 1009. Complement of Base 10 Integer
+[All Solutions](../)  
 
 🟢 Difficulty: Easy
 

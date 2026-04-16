@@ -1,4 +1,5 @@
 # 1768. Merge Strings Alternately
+[All Solutions](../)  
 
 🟢 Difficulty: Easy
 

@@ -1,4 +1,5 @@
 # 283. Move Zeroes
+[All Solutions](../)  
 
 🟢 Difficulty: Easy
 

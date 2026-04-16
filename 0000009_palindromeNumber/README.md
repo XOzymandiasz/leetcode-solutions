@@ -1,4 +1,5 @@
 # 9. Palindrome Number
+[All Solutions](../)
 
 🟢 Difficulty: Easy
 

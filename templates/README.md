@@ -1,4 +1,5 @@
 # Nb. Title
+[All Solutions](../)  
 
 🟢|🟡|🔴 Difficulty: Easy|Medium|Hard
 
