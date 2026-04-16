@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	updateReadme "github/leetcode-solutions/scripts"
+	updateReadme "github/XOzymandiasz/leetcode-solutions/scripts"
 )
 
 func TestUpdateReadmeContent(t *testing.T) {
