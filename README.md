@@ -1,5 +1,16 @@
 <h1 align="center">LeetCode Solutions by XOzymandiasz</h1>
 
+## 📘 About
+
+This repository contains my solutions to problems from LeetCode.
+
+⚠️ Note:
+This repository is intended for reference and learning after solving problems on your own.
+
+I strongly recommend solving problems directly on LeetCode first: https://leetcode.com/
+
+Only then use this repository to compare approaches and review solutions.
+
 | #    | Title                                                                                                               | Difficulty | Time             | Space           | Tags                            | Plan                                                         |
 |------|---------------------------------------------------------------------------------------------------------------------|------------|------------------|-----------------|---------------------------------|--------------------------------------------------------------|
 | 1    | [Two Sum](./0000001_twoSum)                                                                                         | 🟢         | O(n)             | O(n)            | array, hash table               |                                                              |
@@ -23,4 +34,4 @@
 | 1679 | [Max Number of K-Sum Pairs](./0001679_maxNumberOfK-SumPairs)                                                        | 🟡         | O(nlog(n)); O(n) | O(log(n)); O(n) | array, two pointers, hash table | ![Leetcode75](https://img.shields.io/badge/Leetcode-75-blue) |
 | 1732 | [Find The Highest Altitude](./0001732_findTheHighestAltitude)                                                       | 🟢         | O(n)             | O(1)            | array, prefix sum               | ![Leetcode75](https://img.shields.io/badge/Leetcode-75-blue) |
 | 1758 | [Minimum Changes to Make Alternating Binary String](./0001758_minimumChangesToMakeAlternatingBinaryString)          | 🟢         | O(n)             | O(1)            | string, two pointers            |                                                              |
-| 1768 | [Merge Strings Alternately](./0001758_minimumChangesToMakeAlternatingBinaryString)                                  | 🟢         | O(n+m)           | O(n+m)          | string, two pointers            | ![Leetcode75](https://img.shields.io/badge/Leetcode-75-blue) |
+| 1768 | [Merge Strings Alternately](./0001768_mergeStringsAlternately)                                                      | 🟢         | O(n+m)           | O(n+m)          | string, two pointers            | ![Leetcode75](https://img.shields.io/badge/Leetcode-75-blue) |
