@@ -14,7 +14,7 @@ const (
 	Hard   = "🔴"
 )
 
-const RootReadme = "README.md"
+const RootReadme = "../README.md"
 
 func main() {
 	data, err := os.ReadFile(RootReadme)
