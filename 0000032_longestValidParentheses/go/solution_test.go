@@ -28,7 +28,7 @@ func TestLongestValidParentheses(t *testing.T) {
 		t.Run(tc.name, func(t *testing.T) {
 			got := solution.LongestValidParentheses(tc.s)
 			if got != tc.want {
-				t.Fatalf("expected: %v, got: %v", tc.want, got)
+				t.Fatalf("LongestValidParentheses(%v) = %v expected: %v", tc.s, tc.want, got)
 			}
 		})
 	}
