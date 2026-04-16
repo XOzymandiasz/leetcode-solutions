@@ -20,7 +20,7 @@ func GuessNumber(n int) int {
 		} else {
 			break
 		}
-		mid = (high - low) / 2
+		mid = low + (high-low)/2
 	}
 
 	return mid
