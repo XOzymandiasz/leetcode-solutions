@@ -11,6 +11,7 @@ I strongly recommend solving problems directly on LeetCode first: https://leetco
 
 Only then use this repository to compare approaches and review solutions.
 
+
 | #    | Title                                                                                                               | Difficulty | Time             | Space           | Tags                            | Plan                                                         |
 |------|---------------------------------------------------------------------------------------------------------------------|------------|------------------|-----------------|---------------------------------|--------------------------------------------------------------|
 | 1    | [Two Sum](./0000001_twoSum)                                                                                         | 🟢         | O(n)             | O(n)            | array, hash table               |                                                              |
