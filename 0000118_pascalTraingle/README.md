@@ -47,8 +47,12 @@ For every following row:
 ---
 
 ## ⚡ Performance
+> Results are based on LeetCode submissions for the same algorithmic approach.  
+> Values are approximate and depend on the platform's runtime environment, so they should not be treated as rigorous benchmarks.
 
-Runtime and memory results have not been recorded yet.
+| Language | Runtime        | Memory              |
+|----------|----------------|---------------------|
+| C#       | ~1 ms (63.86%) | ~40.29  MB (68.29%) |
 
 ---
 
