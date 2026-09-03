@@ -1,3 +1,5 @@
+namespace Solution.Tests;
+
 public class SolutionTests
 {
     [Theory]
