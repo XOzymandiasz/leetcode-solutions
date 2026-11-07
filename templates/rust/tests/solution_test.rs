@@ -1,8 +1,8 @@
-use rust::solution;
+use rust::Solution;
 
 #[test]
 fn first_case() {
-    let actual = solution(1);
+    let actual = Solution::solution(1);
 
     assert_eq!(actual, 2);
 }
